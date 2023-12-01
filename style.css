@@ -1,0 +1,17 @@
+nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+ul li{
+  display: inline-flex;
+}
+
+section{
+  height: 500px;
+}
