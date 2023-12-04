@@ -75,6 +75,11 @@ nav{
   
 }
 
+.logo{
+  display: flex;
+  align-items: center;
+}
+
 .navLinks li{
   display: inline-flex;
 }
@@ -105,7 +110,7 @@ section.hero {
   height: 500px;
 }
 
-p {
+.overlap p {
   background-color: #C8E4B2;
   border-radius: 2rem;
   font-size: 4rem;
@@ -199,11 +204,42 @@ h3{
   width: 100%;
 }
 
+
 .gift-text >h5{
   font-size: 2rem;
   font-weight: bold;
 }
 
+.gift-text p{
+  max-width: 85%;
+  font-size: 1.5rem;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #4E873F;
+  color: white;
+  padding: 1rem 3rem;
+
+}
+footer img{
+  border-radius: 50%;
+}
+.footer-links{
+  display: flex;
+  gap: 3rem;
+
+}
+
+ul li{
+  font-size: 1.5rem;
+}
+
+ul .heading{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
 /* Front-end Style Guide
 
