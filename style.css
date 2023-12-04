@@ -1,17 +1,267 @@
+/* css reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+*{margin: 0;
+  padding: 0;
+  font: inherit;}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+
+
+/* Remove all animations, transitions and  smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* css styling */
+
+
 nav{
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: grey;
+  background-color: white;  
+  color:  #4E873F;
   display: flex;
   justify-content: space-between;
+  font-size: 2rem;
+  font-weight: bold;
   
 }
 
-ul li{
+.navLinks li{
   display: inline-flex;
 }
 
+
+.navLinks li a{
+  text-decoration: none;
+  color: #4E873F;
+}
 section{
   height: 500px;
+  max-width: 100%;
 }
+
+section.hero {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  margin-top: 75px;
+}
+
+.overlap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+p {
+  background-color: #C8E4B2;
+  border-radius: 2rem;
+  font-size: 4rem;
+  width: 100%;
+  height: 350px;
+  font-weight: bold;
+  padding-top: 3rem;
+  color: white;
+  position: absolute;
+  text-align: center;
+  z-index: 0;
+}
+
+.hero-image {
+  max-height: 500px;
+  position: relative;
+  bottom: -33%;
+  z-index: 1;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Apply clearfix class to .overlap */
+.overlap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.most-loved{
+  display: grid;
+  grid-template-columns: 1fr repeat(3, 3fr) 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  gap: 3rem;
+  background-color:#C8E4B2 ;
+  border-radius: 2rem;
+
+}
+
+h3{
+  grid-column: 2/5;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  color: #4E873F;
+}
+.one{
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  background-color: white;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.two{
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  background-color: white;
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+
+.three{
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  background-color: white;
+  grid-row: 2/3;
+  grid-column: 4/5;
+}
+
+.gift {
+  display: flex;
+  align-items: flex-end;
+  background-image: url('./images/gift.jpg');
+  background-size: cover; 
+  background-position: center;    
+  background-repeat: no-repeat; 
+  width: 100%;
+  height: 500px;
+}
+
+.gift-text{
+  background-color: #C8E4B2;
+  color: #4E873F;
+  width: 100%;
+}
+
+.gift-text >h5{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+/* Front-end Style Guide
+
+Layout
+
+The designs were created to the following widths:
+
+Mobile:
+
+Desktop:-Tablets:
+
+Colors-
+
+Header/home-
+Logo - #6AAO3F
+Navbar items - #4E873F
+Font-color - white and
+Background-color behind text - #C8E4B2
+
+Second section-
+Our story button - white(background) & #4E873F (font color)
+
+Third section (most loved section) -
+Background - #C8E4B2
+font-color - 4E873F
+
+Fourth section (gift ) -
+Background-color of text part - #C8E4B2
+Font-color - 4E873F
+
+Footer-
+Background-color - #4E873F
+Font-color - white
+
+
+
+Typography
+
+Body Copy
+
+Font size - not yet specified. Has to be adjusted while writing the code.
+
+Font- Family:
+
+Logo - Apricots
+Navbar - Yeseva One
+The text in the header section (nourish. Savour. Relish) - Impact (in upper case)
+
+Paragraph and button in the second section -  impact (in lower case)
+
+Heading in most loved section - Impact
+Name of dishes - Canva Sans
+
+Heading in gift section - Impact
+Paragraph- Canva Sans
+
+Footer -
+Headings - Impact
+Rest items - Canva Sans
+
+Weights:Make the font bold only when the letter  are too thin and resulting in poor visibility. */
