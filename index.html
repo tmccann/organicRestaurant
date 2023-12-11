@@ -3,69 +3,95 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- fonts -->
+  <link href="https://fonts.cdnfonts.com/css/impact" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/apricot-2" rel="stylesheet">
+  <!-- style sheet -->
     <link rel="stylesheet" href="./style.css" />
 
     <title>Organic Reseraunt</title>
   </head>
   <body>
+    <main>
     <header>
       <nav>
-        <div class="logo"><img src="./images/logo.png" alt=""><h1>organics</h1></div>
-        <ul class="navLinks" role="list">
-          <li><a class="link" href="./pages/menu.html">menu</a></li>
-          <li><a class="link" href="./pages/giftcard.html">gift cards</a></li>
-          <li><a class="link" href="./pages/reservation.html">resevations</a></li>
+        <div class="logo">
+          <img src="./images/logo.png" alt="" />
+          <h1>Organics</h1>
+        </div>
+        <ul class="links" role="list">
+          <li><a class="nav-link" href="#home">home</a></li>
+          <li><a class="nav-link" href="#gift">gift</a></li>
+          <li><a class="nav-link" href="#reservation">reservation</a></li>
         </ul>
       </nav>
     </header>
     <section class="hero">
-      <div class="overlap clearfix">
+      <div class="hero-top">
         <p>NOURISH. SAVOR. RELISH.</p>
-        <img class="hero-image" src="./images/bowl.png" alt="">
-    </div>
-      
-  
+      </div>
+      <div class="hero-image">
+        <img
+          src="./images/bowl.png
+          "
+          alt=""
+        />
+      </div>
     </section>
-    <section class="our-story"></section>
+    <section>
+      <div class="our-vid">
+        <video id="audioplayer" src="./images/about.mp4" autoplay loop></video>
+      </div>
+    </section>
     <section class="most-loved">
       <h3>MOST LOVED</h3>
-      <div class="one"><img src="/images/pasta.jpg" alt=""></div>
-      <div class="two" ><img src="./images/delicious-food-white-plate.jpg" alt=""></div>
-      <div class="three" ><img src="/images/pasta.jpg" alt=""></div>
-      
+      <div class="one"><img src="/images/pasta.jpg" alt="" /></div>
+      <div class="two">
+        <img src="./images/delicious-food-white-plate.jpg" alt="" />
+      </div>
+      <div class="three"><img src="/images/pasta.jpg" alt="" /></div>
     </section>
-  
+
     <section class="gift">
       <div class="gift-text">
         <h5>Give The Gift Of Flavor.</h5>
-        <p>Treat your loved ones to a culinary journey with our Gift Cards! Delight them with the freedom to savor our organic delicacies and experience the joy of dining at Organic </p>
+        <p>
+          Treat your loved ones to a culinary journey with our Gift Cards!
+          Delight them with the freedom to savor our organic delicacies and
+          experience the joy of dining at Organic
+        </p>
       </div>
     </section>
     <footer>
-      <div class="logo"><img src="./images/logo.png" alt=""><h1>organics</h1></div>
+      <div class="logo">
+        <img src="./images/logo.png" alt="" />
+        <h1>organics</h1>
+      </div>
       <div class="footer-links">
-      <ul role="list">
-        <li class="heading">ABOUT US</li>
-        <li>Online Services</li>
-        <li>Payment Methods</li>
-        <li>Pay Later Service</li>
-      </ul>
-      <ul role="list">
-        <li class="heading">CONTACT US</li>
-        <li>contact.organic@gmail.com</li>
-        <li>organic_official_</li>
-        <li>organic_official_</li>
-        <li>organic_official_</li>
-      </ul>
-      <ul role="list">
-        <li class="heading">FRANCHISE</li>
-        <li>California, US</li>
-        <li>London, UK</li>
-        <li>Milan, Italy</li>
-        <li>Frankfurt, Germany</li>
-      </ul>
-    </div>
+        <ul role="list">
+          <li class="heading">ABOUT US</li>
+          <li>Online Services</li>
+          <li>Payment Methods</li>
+          <li>Pay Later Service</li>
+        </ul>
+        <ul role="list">
+          <li class="heading">CONTACT US</li>
+          <li>contact.organic@gmail.com</li>
+          <li>organic_official_</li>
+          <li>organic_official_</li>
+          <li>organic_official_</li>
+        </ul>
+        <ul role="list">
+          <li class="heading">FRANCHISE</li>
+          <li>California, US</li>
+          <li>London, UK</li>
+          <li>Milan, Italy</li>
+          <li>Frankfurt, Germany</li>
+        </ul>
+      </div>
+
     </footer>
-  <script type="module" src="./index.js"></script>#
+    </main>
   </body>
 </html>
